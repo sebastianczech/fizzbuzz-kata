@@ -8,7 +8,7 @@ Gdy liczba jest podzielna zarówno przez 3 jak i przez 5, trzeba powiedzieć "Fi
 
 1. Utwórz funkcję, która przyjmuje liczbę naturalną większą od 0 i zwraca dla niej ciąg znaków, będący odpowiedzią
 w grze Fizz Buzz.
-2. Utwórz program, który wypisuje na konsolę odpowiedzi dla liczb od 1 do 100.
+2. Utwórz program, który wypisuje na konsolę odpowiedzi dla liczb od 1 do 100 oddzielone przecinkami.
 
 #### Dodatkowe opcjonalne wymagania:
 
