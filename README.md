@@ -6,7 +6,7 @@ Ale gdy liczba jest podzielna przez 3, zamiast tej liczby należy powiedzieć "F
 Natomiast gdy liczba jest podzielna przez 5 trzeba powiedzieć "Buzz".
 Gdy liczba jest podzielna zarówno przez 3 jak i przez 5, trzeba powiedzieć "FizzBuzz".
 
-1. Utwórz funkcję, która przyjmuje liczbę naturalną większą od 0 i zwraca dla niej ciąg znaków, będący odpowiedzią
+1. Utwórz funkcję, która przyjmuje liczbę naturalną większą od 0 i zwraca dla niej reprezentację, będący odpowiedzią
 w grze Fizz Buzz.
 2. Utwórz program, który wypisuje na konsolę odpowiedzi dla liczb od 1 do 100 oddzielone przecinkami.
 
