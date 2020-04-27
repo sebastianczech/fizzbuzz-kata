@@ -9,11 +9,16 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 repositories {
-    maven { url "http://repo.maven.apache.org/maven2" }
+    mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version:'4.12'
-    testCompile group: 'org.assertj', name: 'assertj-core', version:'3.11.1'
-    testCompile group: 'pl.pragmatists', name: 'JUnitParams', version:'1.1.1'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '3.15.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.2'
+    testRuntime group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
+}
+
+
+test {
+    useJUnitPlatform()
 }
