@@ -1,4 +1,4 @@
-package tdd.fizbuzz;
+package tdd.fizzbuzz;
 
 public class FizzBuzz {
 
