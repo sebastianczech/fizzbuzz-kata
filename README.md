@@ -1,7 +1,7 @@
 FizzBuzz Kata
 ==================
 
-#### Zasady
+## Zasady
 
 Gracze liczą po kolei: 1, 2...
 Ale gdy liczba jest podzielna przez 3, zamiast tej liczby należy powiedzieć "Fizz".
@@ -19,7 +19,7 @@ w grze Fizz Buzz.
 3. Od teraz Fizz i Buzz mówimy dla podzielności przez/zawierania cyfr 7 i 9. 
 
 
-#### Rules
+## Rules
 
 For multiples of 3 return "Fizz" instead of the number
 For the multiples of 5 return "Buzz" instead of the number
