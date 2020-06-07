@@ -35,4 +35,18 @@ public class FizzBuzzTest {
         assertThat(fizzBuzzResult).isEqualTo("Fizz");
     }
 
+    @Test
+    public void should_return_number_when_input_is_4() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(4);
+
+        assertThat(fizzBuzzResult).isEqualTo("4");
+    }
+
+    @Test
+    public void should_return_buzz_when_input_is_5() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(5);
+
+        assertThat(fizzBuzzResult).isEqualTo("Buzz");
+    }
+
 }
