@@ -49,4 +49,11 @@ public class FizzBuzzTest {
         assertThat(fizzBuzzResult).isEqualTo("Buzz");
     }
 
+    @Test
+    public void should_return_fizzbuzz_when_input_is_15() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(15);
+
+        assertThat(fizzBuzzResult).isEqualTo("FizzBuzz");
+    }
+
 }
