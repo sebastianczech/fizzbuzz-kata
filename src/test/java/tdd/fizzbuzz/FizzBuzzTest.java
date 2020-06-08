@@ -36,6 +36,13 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_fizz_when_input_is_contains_3() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(3);
+
+        assertThat(fizzBuzzResult).isEqualTo("Fizz");
+    }
+
+    @Test
     public void should_return_number_when_input_is_4() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(4);
 
@@ -52,6 +59,13 @@ public class FizzBuzzTest {
     @Test
     public void should_return_fizzbuzz_when_input_is_15() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(15);
+
+        assertThat(fizzBuzzResult).isEqualTo("FizzBuzz");
+    }
+
+    @Test
+    public void should_return_fizzbuzz_when_input_is_30() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(30);
 
         assertThat(fizzBuzzResult).isEqualTo("FizzBuzz");
     }
