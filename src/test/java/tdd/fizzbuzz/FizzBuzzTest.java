@@ -64,6 +64,13 @@ public class FizzBuzzTest {
     }
 
     @Test
+    public void should_return_bar_when_input_is_7() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(7);
+
+        assertThat(fizzBuzzResult).isEqualTo("Bar");
+    }
+
+    @Test
     public void should_return_fizzbuzz_when_input_is_15() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(15);
 
