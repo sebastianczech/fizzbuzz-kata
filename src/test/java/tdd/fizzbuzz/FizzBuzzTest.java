@@ -29,7 +29,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_input_is_5() {
+    public void should_return_fizz_when_input_is_dividable_by_5() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(5);
 
         assertThat(fizzBuzzResult).isEqualTo("Fizz");
@@ -50,7 +50,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_when_input_is_7() {
+    public void should_return_buzz_when_input_is_dividable_by_7() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(7);
 
         assertThat(fizzBuzzResult).isEqualTo("Buzz");
@@ -64,7 +64,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_bar_when_input_is_9() {
+    public void should_return_bar_when_input_is_dividable_by_9() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(9);
 
         assertThat(fizzBuzzResult).isEqualTo("Bar");
