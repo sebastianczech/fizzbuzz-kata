@@ -29,15 +29,15 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_fizz_when_input_is_3() {
-        String fizzBuzzResult = fizzBuzz.fizzBuzz(3);
+    public void should_return_fizz_when_input_is_5() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(5);
 
         assertThat(fizzBuzzResult).isEqualTo("Fizz");
     }
 
     @Test
-    public void should_return_fizz_when_input_contains_3() {
-        String fizzBuzzResult = fizzBuzz.fizzBuzz(3);
+    public void should_return_fizz_when_input_contains_5() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(5);
 
         assertThat(fizzBuzzResult).isEqualTo("Fizz");
     }
@@ -50,22 +50,22 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_buzz_when_input_is_5() {
-        String fizzBuzzResult = fizzBuzz.fizzBuzz(5);
-
-        assertThat(fizzBuzzResult).isEqualTo("Buzz");
-    }
-
-    @Test
-    public void should_return_buzz_when_input_contains_5() {
-        String fizzBuzzResult = fizzBuzz.fizzBuzz(56);
-
-        assertThat(fizzBuzzResult).isEqualTo("Buzz");
-    }
-
-    @Test
-    public void should_return_bar_when_input_is_7() {
+    public void should_return_buzz_when_input_is_7() {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(7);
+
+        assertThat(fizzBuzzResult).isEqualTo("Buzz");
+    }
+
+    @Test
+    public void should_return_buzz_when_input_contains_7() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(76);
+
+        assertThat(fizzBuzzResult).isEqualTo("Buzz");
+    }
+
+    @Test
+    public void should_return_bar_when_input_is_9() {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(9);
 
         assertThat(fizzBuzzResult).isEqualTo("Bar");
     }
