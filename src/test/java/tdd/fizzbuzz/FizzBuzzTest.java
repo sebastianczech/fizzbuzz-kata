@@ -2,6 +2,8 @@ package tdd.fizzbuzz;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -82,6 +84,30 @@ public class FizzBuzzTest {
         String fizzBuzzResult = fizzBuzz.fizzBuzz(30);
 
         assertThat(fizzBuzzResult).isEqualTo("FizzBuzz");
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = { 25, 65, 55 })
+    public void should_return_fizz_when_many_inputs_is_dividable_by_5(int number) {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(number);
+
+        assertThat(fizzBuzzResult).isEqualTo("Fizz");
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = { 21, 14, 49 })
+    public void should_return_buzz_when_many_inputs_is_dividable_by_7(int number) {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(number);
+
+        assertThat(fizzBuzzResult).isEqualTo("Buzz");
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = { 18, 36, 81 })
+    public void should_return_bar_when_many_inputs_is_dividable_by_9(int number) {
+        String fizzBuzzResult = fizzBuzz.fizzBuzz(number);
+
+        assertThat(fizzBuzzResult).isEqualTo("Bar");
     }
 
 }
